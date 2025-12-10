@@ -6,8 +6,14 @@ import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 import { metaImagesPlugin } from "./vite-plugin-meta-images";
 
 export default defineConfig({
-  // IMPORTANT for GitHub Pages
-  base: "/project-flip/",
+  base: "/project-flip/",  // 💥 VERY IMPORTANT FOR GITHUB PAGES
+
+  root: path.resolve(import.meta.dirname, "client"),
+
+  build: {
+    outDir: path.resolve(import.meta.dirname, "docs"),
+    emptyOutDir: true,
+  },
 
   plugins: [
     react(),
@@ -21,19 +27,6 @@ export default defineConfig({
       "@": path.resolve(import.meta.dirname, "client", "src"),
       "@shared": path.resolve(import.meta.dirname, "shared"),
       "@assets": path.resolve(import.meta.dirname, "attached_assets"),
-    },
-  },
-
-  root: path.resolve(import.meta.dirname, "client"),
-
-  build: {
-    outDir: path.resolve(import.meta.dirname, "docs"),
-    emptyOutDir: true,
-  },
-
-  css: {
-    postcss: {
-      plugins: [],
     },
   },
 });
