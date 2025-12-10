@@ -55,19 +55,19 @@ const INITIAL_PROJECTS: Project[] = [
     id: '1',
     name: 'Skyline Tower',
     description: 'A modern 50-story residential complex in the heart of the city, featuring sustainable architecture and luxury amenities.',
-    imageUrl: '/attached_assets/stock_images/modern_architectural_2dfc1842.jpg'
+    imageUrl: '/images/project1.jpg'
   },
   {
     id: '2',
     name: 'Eco Office Park',
     description: 'State-of-the-art office spaces designed for the future of work, incorporating green spaces and energy-efficient systems.',
-    imageUrl: '/attached_assets/stock_images/modern_architectural_1f4a1336.jpg'
+    imageUrl: '/images/project2.jpg'
   },
   {
     id: '3',
     name: 'Urban Innovation Hub',
     description: 'A collaborative workspace and research center bringing together tech startups and established enterprises.',
-    imageUrl: '/attached_assets/stock_images/modern_office_interi_ea21eb39.jpg'
+    imageUrl: '/images/project3.jpg'
   }
 ];
 
@@ -77,14 +77,14 @@ const INITIAL_CLIENTS: Client[] = [
     name: 'Sarah Johnson',
     designation: 'CEO, TechFlow',
     description: 'The team delivered beyond our expectations. Their attention to detail and commitment to quality is unmatched.',
-    imageUrl: '/attached_assets/stock_images/professional_happy_c_80b5828b.jpg'
+    imageUrl: '/images/client1.jpg'
   },
   {
     id: '2',
     name: 'Michael Chen',
     designation: 'Director, GreenBuild',
     description: 'Professional, timely, and innovative. They transformed our vision into a reality that stands out in the market.',
-    imageUrl: '/attached_assets/stock_images/professional_happy_c_93945319.jpg'
+    imageUrl: '/images/client2.jpg'
   }
 ];
 
